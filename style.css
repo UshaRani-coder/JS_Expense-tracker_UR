@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background:linear-gradient(180deg,#32127a,#000);
+    background-repeat: no-repeat;
+    height:100vh ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper{
+    height: 100%;
+    padding:50px 20px 0 20px ;
+    
+    
+}
+.savings{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    align-items: center;
+    font-size: 20px;
+}
+.savings div{
+    display: flex;
+    column-gap: 3px;
+}
+.top div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.top{
+    display: inline-flex;
+    background-color:rgb(160,32,240,0.3) ;
+    border-radius: 10px;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.top div:nth-child(1){
+    position: relative;
+}
+.top div:nth-child(1)::after{
+    content:"";
+    position:absolute;
+    background-color: rgb(255,255,255,0.5);
+    height: 2px;
+    width: 45%;
+    rotate: 90deg;
+    top: 50%;
+    right: -25px;
+}
+.top div:nth-child(1) span{
+    color: #21ed98;
+}
+.top div:nth-child(2) span{
+    color: red;
+}
+.top-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 100px;
+    padding-top: 20px;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.select-category{
+    display: flex;
+    background-color:rgb(255,255,255,0.3) ;
+    border-radius: 10px;
+    width: 220px;
+    padding:5px 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.select-category div{
+    font-size: 13px;
+    opacity: 0.7;
+    
+}
+.exsp-category{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    
+    
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.amt{
+    
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.enter{
+    background-color:rgb(255,255,255,0.3) ;
+    border-radius:10px;
+    width: 220px;
+    text-align: left;
+    padding: 5px 0 5px 30px;
+    border: none;
+    outline:none;
+    
+}
+.enter::placeholder{
+    color: #fff;
+    opacity: 0.8;
+}
+button{
+    width: 220px;
+    border-radius: 20px;
+    background-color: blue;
+    border: none;
+    transform: translateY(20px);
+    padding: 5px;
+}
+#income,#home,#home-emi,#car-emi,#gold-emi,#groceries,#electricity,#gas,#school,
+#med,#shopping,#travel,#pet,#mobile,#other{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 190px;
+    padding:5px 0;
+    background-color:rgb(135,206,235,0.5);
+    cursor:pointer;
+ 
+}
+#income{
+margin-top: 10px;
+}
+.dropdown{
+    background-color:rgb(255,255,255,0.3) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    border-radius: 10px;
+    margin-top: 14px;
+    max-height: 70px;
+    overflow-y: auto;
+    display: none;
+    width: 220px;
+    
+}
+.main{
+    background-color:rgb(225,225,225,0.3) ;
+    color: black;
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2px;
+    max-height: 70px;
+    overflow-y: auto;
+    
+}
+.header{
+    padding-bottom: 10px;
+}
